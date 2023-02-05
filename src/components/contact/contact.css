@@ -1,0 +1,60 @@
+.get-a-quote-contact {
+  padding: 0 20px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  background-color: #181433;
+  z-index: 100;
+  padding: 10px 20px;
+  color: white;
+}
+
+.contact-input {
+  background-color: #393458;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.get-a-quote-contact img {
+  zoom: 0.6;
+}
+
+.contact-submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.contact-submit .submit-btn {
+  background-color: #f1ddff;
+  color: #01041c;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 22px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .get-a-quote-contact {
+    width: 60%;
+    padding-right: 10%;
+  }
+
+  .contact-submit .submit-btn {
+    zoom: 0.6;
+    padding: 15px 22px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .get-a-quote-contact {
+    width: 100%;
+  }
+
+  
+}

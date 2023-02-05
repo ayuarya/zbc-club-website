@@ -1,0 +1,415 @@
+@tailwind base;
+@layer base {
+  .all-tools h3 {
+    @apply text-xl;
+    @apply mt-10;
+    @apply mb-3;
+
+    text-transform: uppercase;
+  }
+
+  .workflow-divs h3 {
+    display: inline;
+    font-weight: 600;
+    @apply text-2xl;
+  }
+
+  .list-dot {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: black;
+  }
+}
+
+
+
+.about-us__hero h3 {
+  font-weight: 700;
+  font-size: 4rem;
+  padding-top: 120px;
+  padding-left: 80px;
+  padding-bottom: 40px;
+}
+
+.hero__images {
+  display: flex;
+  margin-top: 20px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.hero__line {
+  background-color: #111;
+  height: 2px;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.hero__ideas {
+  margin: 0 100px;
+  /* flex: 1; */
+  width: 70%;
+}
+
+.hero__ideas p {
+  font-size: 1.4rem;
+}
+
+.hero__images img {
+  height: 200px;
+}
+
+.hero__images button {
+  position: absolute;
+  top: -35px;
+  right: 280px;
+  border: 5px solid white;
+  height: 125px;
+  width: 125px;
+  z-index: 1;
+}
+
+
+.workflow-divs div:nth-child(1) {
+  margin-left: 0;
+}
+
+.git-purple-btn {
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+  border: none;
+  background-color: #613fe5;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.we-are-creative {
+  margin: 20px auto;
+  background-color: #01041c;
+  color: white;
+}
+
+#creatives-about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#creatives-about-us div:nth-child(2) {
+  width: 40%;
+}
+#creatives-about-us div:nth-child(2) img {
+  width: 40vw;
+}
+
+#creatives-about-us div:nth-child(2) p {
+  margin-top: 20px;
+}
+
+#creatives-about-us div:nth-child(1) {
+  width: 20%;
+}
+#creatives-about-us div:nth-child(1) h1 {
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-top: 10px;
+}
+#creatives-about-us div:nth-child(1) h1 span {
+  font-weight: 600;
+}
+#creatives-about-us div:nth-child(1) h3 span {
+  font-weight: 300;
+  color: grey;
+}
+
+#marquee-section-about {
+  position: relative;
+  margin-top: 40px;
+}
+
+.marquee-dot {
+  height: 15px;
+  width: 15px;
+  border: none;
+  background-color: grey;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.marquee-about-us {
+  background: url("../../assets/marquee-bg-about.svg");
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 3.5rem;
+}
+
+.projects-section {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-section .projects-header {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: 10vh auto;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects-header div:nth-child(2) {
+  margin: 20px 50px;
+  width: 50%;
+}
+
+.projects-section h3,
+.projects-section h4,
+.projects-section h1 {
+  font-weight: 300;
+}
+.projects-section h4 {
+  color: #959595;
+}
+
+.projects-header div:nth-child(2) h3 span {
+  color: #959595;
+}
+
+.all-projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: flex-end;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.all-projects div {
+  margin: 0 20px;
+}
+
+.all-projects div img {
+  max-width: 20vw;
+}
+
+.services-section {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  margin: 60px auto;
+  align-items: center;
+  gap: 30px 20px;
+}
+
+.goals-and-tools {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#01041c 0 15%, #ececff 40% 60%, #01041c 85% 100%);
+}
+
+.goals-div {
+  border: none;
+  background-color: #ececff;
+  border-radius: 1rem;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+.goal-header-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+.goals-headers div {
+  padding: 0 10px;
+}
+
+.goals-headers img {
+  height: 100px;
+  width: 100px;
+}
+
+.all-tools div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.all-tools div * {
+  margin: 10px;
+}
+
+.our-workflow {
+  background-color: #ececff;
+}
+
+.workflow-number {
+  color: white;
+  border-radius: 50%;
+  border: none;
+  display: inline-block;
+  font-weight: 500;
+  background-color: black;
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 1440px) {
+  .about-us__hero {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .about-us__hero h3 {
+    font-size: 3rem;
+    padding-left: 40px;
+  }
+  #creatives-about-us {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px auto;
+    align-items: flex-start;
+    width: 70%;
+  }
+  #creatives-about-us div:nth-of-type(1) {
+    width: 80%;
+  }
+  #creatives-about-us div:nth-of-type(2) {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .marquee-about-us {
+    margin: 20px 0;
+  }
+
+  .services-section {
+    zoom: 0.8;
+  }
+
+  .goals-div {
+    font-size: 0.8rem;
+  }
+  .goal-header-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .our-workflow .workflow-divs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+
+  .projects-header div:nth-child(2) {
+    width: 100%;
+  }
+
+  .all-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .all-projects div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .all-projects div img {
+    max-width: 35vw;
+  }
+
+  .services-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services-section div {
+    margin-bottom: 40px;
+  }
+
+  .services-section img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .our-workflow .workflow-divs {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
+  }
+  .all-projects {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+
+  .goals-div {
+    padding: 20px;
+  }
+
+  .goals-headers img {
+    display: none;
+  }
+
+  .all-tools div img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .design-tools div img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .workflow-divs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .all-projects div {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .all-projects div img {
+    max-width: 40vw;
+  }
+
+  #marquee-section-about .git-purple-btn {
+    position: absolute;
+    left: 20px;
+  }
+  #marquee-section-about .marquee-about-us {
+    font-size: 2rem;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  .marquee-about-us {
+    font-size: 5rem;
+    height: 160px;
+  }
+}
