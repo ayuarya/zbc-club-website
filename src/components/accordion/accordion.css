@@ -1,54 +1,76 @@
+.accordion-section {
+  background-color: #01041c;
+  padding: 0 2%;
+}
+
 .wrapper {
-    display: flex;
-    /* height: 100vh; */
-    /* width: 98.7vw; */
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    background-color: #01041C;
-    padding: 1rem 10%;
-    font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  padding: 10px 30px;
+  font-size: 0.8rem;
+}
+
+.imagg img {
+  height: 400px;
+  width: 220px;
+  /* margin: 20px; */
 }
 
 .accordion {
-    width: 7500px;
-    padding: 0px 0 0 0px;
-    //height: 10px;
+  width: 70%;
+  padding: 0px 0 0 0px;
+  color: white;
+  /* //height: 10px; */
 }
 
-.item 
-{
-    background-color: #01041C;
-    margin-bottom: 5px;
-    padding: 0px 0 0 0px;
-    margin: 0px 0 0 0px;
+.item {
+  background-color: #01041c;
+  margin-bottom: 5px;
+  padding: 0px 0 0 0px;
+  margin: 0px 0 0 10px;
 }
 
 .title {
-    color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
+  color: #ffffff;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  margin: 15px 0;
 }
 
 .content {
-    color: #FFFFFF;
-    max-height: 0;
-    overflow: hidden;
-    font-weight: 400;
-    transition: all 0.5s cubic-bezier(0,1,0,1);
+  color: #ffffff;
+  max-height: 0;
+  overflow: hidden;
+  font-weight: 400;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 }
 
-.content.show{
-    height: auto;
-    max-height: 9999px;
-    transition: all 0.5s cubic-bezier(1,0,1,0);
+.content.show {
+  height: auto;
+  max-height: 50px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  margin-bottom: 30px;
 }
 
 .image {
-    padding: 0 90px 0 0;
+  padding: 0 90px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .imagg {
+    display: none;
+  }
+  .accordion {
+    width: 100%;
+  }
+  
 }

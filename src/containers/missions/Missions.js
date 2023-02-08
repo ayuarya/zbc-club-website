@@ -1,6 +1,7 @@
 import React from "react";
 import "./Missions.css";
 import Navbar from "../../components/navbar/navbar";
+import Footer from "../../components/footer/Footer";
 function Missions() {
   return (
     <React.Fragment>
@@ -16,14 +17,12 @@ function Missions() {
           make an impactful difference.
         </p>
       </div>
-
       <div className="shape-rect1"></div>
       <div className="shape-rect2"></div>
       <div className="shape-rect3"></div>
       <div className="shape-rect4"></div>
       <div className="shape-rect5"></div>
       <div className="shape-rect6"></div>
-
       <div className="content-foot">
         <span className="tagger">Our Mission</span>
         <p>
@@ -36,11 +35,9 @@ function Missions() {
           sophisticated tools and frameworks.
         </p>
       </div>
-
       <div className="content">
         <span className="value">Values We Respect</span>
       </div>
-
       <div className="container">
         <div className="row">
           <div className="column">
@@ -74,9 +71,7 @@ function Missions() {
               We help each other and act as a team.
             </p>
           </div>
-        </div>
 
-        <div className="row">
           <div className="column">
             <span className="col_title">VALUE NO.4</span>
             <br></br>
@@ -111,7 +106,9 @@ function Missions() {
             </p>
           </div>
         </div>
+        <Footer />
       </div>
+      a
     </React.Fragment>
   );
 }

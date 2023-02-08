@@ -12,25 +12,28 @@ function Accordion() {
   };
 
   return (
-    <div className="wrapper">
-      <div className="imagg">
-        {/* Putting the image beside the accordion*/}
-        <a href="/" className="image">
+    <div className="accordion-section">
+      <h1 className="text-white text-3xl mt-4 pt-14 pl-2 md:pl-4 lg:pl-8">
+        Check out these frequently asked questions to see if we have a match
+      </h1>
+      <div className="wrapper">
+        <div className="imagg">
+          {/* Putting the image beside the accordion*/}
           <img src={image} alt="accordion-banner"></img>
-        </a>
-      </div>
-      <div className="accordion">
-        {data.map((item, i) => (
-          <div className="item">
-            <div className="title" onClick={() => toggle(i)}>
-              <h2>{item.question}</h2>
-              <span>{selected === i ? "-" : "+"}</span>
+        </div>
+        <div className="accordion">
+          {data.map((item, i) => (
+            <div className="item">
+              <div className="title" onClick={() => toggle(i)}>
+                <h2>{item.question}</h2>
+                <span>{selected === i ? "-" : "+"}</span>
+              </div>
+              <div className={selected === i ? "content show" : "content"}>
+                {item.answer}
+              </div>
             </div>
-            <div className={selected === i ? "content show" : "content"}>
-              {item.answer}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

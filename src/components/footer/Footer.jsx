@@ -2,6 +2,12 @@ import React from "react";
 import "./Footer.css";
 import circle from "../../assets/footer-circle.svg";
 
+import github from "../../assets/github-icon.png";
+import instagram from "../../assets/instagram-icon.png";
+import linkedin from "../../assets/linkedin-icon.png";
+import youtube from "../../assets/youtube-icon.png";
+import discord from "../../assets/discord-icon.png";
+
 function Footer() {
   return (
     <div className="main-footer">
@@ -23,11 +29,36 @@ function Footer() {
         <div className="footer-accounts">
           <h4>FOLLOW US</h4>
           <div>
-            <a href="https://www.google.com">GitHub</a>
-            <a href="https://www.google.com">LinkedIn</a>
-            <a href="https://www.google.com">Instagram</a>
-            <a href="https://www.google.com">Discord</a>
-            <a href="https://www.google.com">YouTube</a>
+            <div className="footer-links">
+              <img src={github} className="footer-icons" alt="github-icon" />
+              <a href="https://github.com/Zero-Bugs-Club/">GitHub</a>
+            </div>
+            <div className="footer-links">
+              <img
+                src={linkedin}
+                className="footer-icons"
+                alt="linkedin-icon"
+              />
+              <a href="https://www.linkedin.com/company/zero-bugs-club/mycompany/">
+                LinkedIn
+              </a>
+            </div>
+            <div className="footer-links">
+              <img
+                src={instagram}
+                className="footer-icons"
+                alt="instagram-icon"
+              />
+              <a href="https://www.instagram.com/zbcvitc/">Instagram</a>
+            </div>
+            <div className="footer-links">
+              <img src={discord} className="footer-icons" alt="discord-icon" />
+              <a href="https://discord.gg/47r8MyTm">Discord</a>
+            </div>
+            <div className="footer-links">
+              <img src={youtube} className="footer-icons" alt="youtube-icon" />
+              <a href="https://www.youtube.com/@ZeroBugsClub">YouTube</a>
+            </div>
           </div>
         </div>
       </div>

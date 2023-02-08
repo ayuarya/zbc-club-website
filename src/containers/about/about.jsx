@@ -141,13 +141,19 @@ const About = () => {
         </div>
         <div className="all-projects">
           <div>
-            <h3>Project Name 1</h3>
-            <h4>Project Type</h4>
+            <h3>
+              <a href="https://shaheen-subah.github.io/fight-covid/about.html">
+                Fight Covid
+              </a>
+            </h3>
+            <h4>Covid related information</h4>
             <img src={rect1} alt="" />
           </div>
           <div>
-            <h3>Project Name 2</h3>
-            <h4>Project Type</h4>
+            <h3>
+              <a href="https://www.sdsgems.co.in/">SDS Gems Project</a>
+            </h3>
+            <h4>Website for gem dealers</h4>
             <img src={rect2} alt="" />
           </div>
           <div>
